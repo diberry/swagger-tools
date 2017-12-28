@@ -35,6 +35,7 @@ let list = paths(swagger);
 list.forEach(item => {
     console.log(item.path + "  [" + item.verbs.toString() + "]");
 })
+
 /*
 output:
 /luis/api/v2.0/apps/  [post,get]
