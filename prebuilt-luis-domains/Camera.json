@@ -1,0 +1,515 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Camera",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Camera.CapturePhoto",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "CapturePhoto"
+      }
+    },
+    {
+      "name": "Camera.CaptureScreenshot",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "CaptureScreenshot"
+      }
+    },
+    {
+      "name": "Camera.CaptureSelfie",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "CaptureSelfie"
+      }
+    },
+    {
+      "name": "Camera.CaptureVideo",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "CaptureVideo"
+      }
+    },
+    {
+      "name": "Camera.StartBroadcasting",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "StartBroadcasting"
+      }
+    },
+    {
+      "name": "Camera.StopBroadcasting",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "StopBroadcasting"
+      }
+    },
+    {
+      "name": "Camera.StopVideoRecording",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "StopVideoRecording"
+      }
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Camera.AppName",
+      "inherits": {
+        "domain_name": "Camera",
+        "model_name": "AppName"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "take a picture",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "please record this",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "stop recording",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "take a picture of me",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "take a selfie",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "snap picture",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "show me a selfie",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "take my picture",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "take a screenshot",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "take a photo of me",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "take a pic of me",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "end recording",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "capture screen",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "can i take pictures with the webcam",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "can you snap a picture for me",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "take picture on surface",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "take a picture of brittany",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "let me take a picture",
+      "intent": "Camera.CapturePhoto",
+      "entities": []
+    },
+    {
+      "text": "take a picture with smart cam",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 20,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "can you take a snapshot with my camera",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 32,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "voice snap take a picture of blue",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "can you print the screen",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "save screenshot to onenote",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "screenshot this page for me",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "can i take a selfie",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "can my phone take selfies",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "please take me a selfie",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "take a photograph of me",
+      "intent": "Camera.CaptureSelfie",
+      "entities": []
+    },
+    {
+      "text": "how do i video record with this laptop",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "begin video recording",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "start recording in five seconds",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "start broadcasting xbox one",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "start broadcast for me please",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "stop broadcast",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "stop broadcasting",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "stop recording my game",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "stop recording please",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "stop recording this video",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "take a screenshot to onenote",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 21,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "voicesnap take a picture of my screen",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "voicesnap take a picture of orange",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "voicesnap take a picture of thermometer case",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how do i capture what ' s on my screen",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "voice snap take a picture of red",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "voice snap take a picture of something different",
+      "intent": "Camera.CapturePhoto",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "screenshot that he quits auto",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "take a screenshot immediately",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "use screengrab to capture a screenshot please",
+      "intent": "Camera.CaptureScreenshot",
+      "entities": []
+    },
+    {
+      "text": "record my game",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "record that cause",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "record what i am listening right now",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "record for me the football match",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "sts record that",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "record that xbox record that",
+      "intent": "Camera.CaptureVideo",
+      "entities": []
+    },
+    {
+      "text": "start a broadcast on twitch",
+      "intent": "Camera.StartBroadcasting",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i want to boardcast using ustream",
+      "intent": "Camera.StartBroadcasting",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 26,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "play start broadcast",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "let me start broadcasting now",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "start for me broadcast",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "i want to start broadcasting my games",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "i need to start my new broadcast",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "stop for me the broadcast",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "i want to stop broadcast on ustream please",
+      "intent": "Camera.StopBroadcasting",
+      "entities": [
+        {
+          "entity": "Camera.AppName",
+          "startPos": 28,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "stop broadcasting right now",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "let me stop the broadcast now",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "i need to finish the broadcast immediately",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "please stop broadcast on twitch",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "please i want to stop broadcasting",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "i said stop video recording",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "can you stop recording",
+      "intent": "Camera.StopVideoRecording",
+      "entities": []
+    },
+    {
+      "text": "let ' s end broadcasting now",
+      "intent": "Camera.StopBroadcasting",
+      "entities": []
+    },
+    {
+      "text": "let ' s broadcast immediately",
+      "intent": "Camera.StartBroadcasting",
+      "entities": []
+    }
+  ]
+}

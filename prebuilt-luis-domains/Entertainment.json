@@ -1,0 +1,1657 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Entertainment",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Entertainment.Search",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Search"
+      }
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Entertainment.ContentRating",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "ContentRating"
+      }
+    },
+    {
+      "name": "Entertainment.Genre",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Genre"
+      }
+    },
+    {
+      "name": "Entertainment.Keyword",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Keyword"
+      }
+    },
+    {
+      "name": "Entertainment.Language",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Language"
+      }
+    },
+    {
+      "name": "Entertainment.MediaFormat",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "MediaFormat"
+      }
+    },
+    {
+      "name": "Entertainment.MediaSource",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "MediaSource"
+      }
+    },
+    {
+      "name": "Entertainment.MediaSubTypes",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "MediaSubTypes"
+      }
+    },
+    {
+      "name": "Entertainment.Nationality",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Nationality"
+      }
+    },
+    {
+      "name": "Entertainment.Person",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Person"
+      }
+    },
+    {
+      "name": "Entertainment.Role",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Role"
+      }
+    },
+    {
+      "name": "Entertainment.Title",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Title"
+      }
+    },
+    {
+      "name": "Entertainment.Type",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "Type"
+      }
+    },
+    {
+      "name": "Entertainment.UserRating",
+      "inherits": {
+        "domain_name": "Entertainment",
+        "model_name": "UserRating"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "show me the top news",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 12,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "show me cat videos",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "open my apps",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "find rock dance",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "free documentaries",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "display newest horror results",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 15,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "search romantic in the marketplace",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 7,
+          "endPos": 14
+        },
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 23,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "kids movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 5,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "kids sport",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 9
+        },
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "kids video",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "action games not nintendo please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 7,
+          "endPos": 11
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "find some german rock music that was done in the 80s",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "italian movies please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what are some popular japanese movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 22,
+          "endPos": 29
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 14,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "a chinese song for me please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 10,
+          "endPos": 13
+        },
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 2,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "popular defiance ohio music",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 8,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i want to see movies by john wayne",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 24,
+          "endPos": 33
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 21,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "search out blast in the marketplace",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 24,
+          "endPos": 34
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 7,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "show me drama but do not include kevin spacey",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 33,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "what movies has jerry bruckheimer produced",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 16,
+          "endPos": 32
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 34,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "please find the most recent song by adele",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 36,
+          "endPos": 40
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 33,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "show movies starring gary oldman",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 21,
+          "endPos": 31
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 12,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "get me tapestry or songs by carole king",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 7,
+          "endPos": 14
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 28,
+          "endPos": 38
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 25,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "vine app on windows phone",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "watch dogs demo",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 0,
+          "endPos": 9
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "show all comedy shows",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 9,
+          "endPos": 14
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 16,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "epic games please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 5,
+          "endPos": 9
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me the 1 rated programs",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "sync video with my youtube account",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 16,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "family games with donkey kong please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 7,
+          "endPos": 11
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 18,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "search the marketplace for adobe",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "search the store for carousel",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 21,
+          "endPos": 28
+        },
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "search milkshake in the marketplace",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 24,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "search the marketplace for wreck it ralph",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "search the store for sport",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "search the store for team fortress",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "hd sport",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 3,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "get for me intellivision roms itv",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 30,
+          "endPos": 32
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 11,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "search for hindi movies please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i want to watch hindi series",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 16,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "let me watch a popular japanese drama",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 23,
+          "endPos": 30
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 15,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "list the top rated japanese movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 19,
+          "endPos": 26
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "can you play a comedy italian movie ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 22,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "what are the most popular korean movies ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "find some french movies for me please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "display good comedies please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 13,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "open pbs kids please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 9,
+          "endPos": 12
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 5,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "start the breaking news",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 10,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "find 90 ' s r and b",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 12,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "gospel song name of artist and i ' m reaching for greater",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 31,
+          "endPos": 56
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "find speed metal",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "free sport",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "do you have a video game called killer instinct",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 32,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "futuristic racing games please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 11,
+          "endPos": 16
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "find me a few mmo rpg games",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 18,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "look for the soundtrack of step up",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 27,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "what is the best tv show",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i want ballads or jazz",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "search for funny drama movies .",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "give me the movie schedule",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 18,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "play music .",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 5,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "display the 2k14 demo",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "search zumba fitness in the marketplace",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 28,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "display johnny depp movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 8,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "display a list of old american songs",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 22,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "find some indian old movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "switch to the america canadian tv show",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 31,
+          "endPos": 37
+        },
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 14,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 22,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "search for the nighttime tv show that denzel washington starred in .",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 38,
+          "endPos": 54
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 56,
+          "endPos": 65
+        }
+      ]
+    },
+    {
+      "text": "display minecraft videos",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 8,
+          "endPos": 16
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 18,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "the good times tv show please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 0,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "play the american movie",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "tell me what are the most popular jonas brors albums",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 46,
+          "endPos": 51
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 34,
+          "endPos": 44
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 21,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "let ' s watch a chinese drama",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Nationality",
+          "startPos": 16,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "switch to local news",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 16,
+          "endPos": 19
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "let ' s watch frozen movie in 3d",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 30,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "display pbs kids please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "i want to listen to michael jackson songs",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 20,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what is the most popular american movie in 2016 ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 25,
+          "endPos": 32
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 12,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "find me all alternative rock by smashing pumpkins",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 32,
+          "endPos": 48
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 29,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "let me watch the latest movie in the theaters",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 37,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "get for me a list of german movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Language",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "find action flicks or hugh jackman movies",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 5,
+          "endPos": 10
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 35,
+          "endPos": 40
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 22,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "find r kelly dance songs locate greatest hits by toni braxton",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 32,
+          "endPos": 44
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 19,
+          "endPos": 23
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 5,
+          "endPos": 11
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 49,
+          "endPos": 60
+        },
+        {
+          "entity": "Entertainment.Role",
+          "startPos": 46,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i want to watch cosmos tv series 2014",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 16,
+          "endPos": 21
+        },
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "display lego movie trailer",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 8,
+          "endPos": 11
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "search machinima in the marketplace",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 7,
+          "endPos": 15
+        },
+        {
+          "entity": "Entertainment.MediaSource",
+          "startPos": 24,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "display cool movies please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Type",
+          "startPos": 13,
+          "endPos": 18
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "i want to watch the football match",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 29,
+          "endPos": 33
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "display a list of soft rock songs from the 90s .",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Genre",
+          "startPos": 18,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "view pg rated movies with comedy or tom hanks",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 5,
+          "endPos": 6
+        },
+        {
+          "entity": "Entertainment.Person",
+          "startPos": 36,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "display the 3 star rating programs",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 26,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "show me five star games or pc",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 27,
+          "endPos": 28
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "open the breaking bad season six",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 9,
+          "endPos": 20
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 29,
+          "endPos": 31
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "find for me recipe apps",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "i want the free downloads to be displayed",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 16,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "play oculus trailer please",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 5,
+          "endPos": 10
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 12,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "show me the walking dead season four",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 8,
+          "endPos": 23
+        },
+        {
+          "entity": "Entertainment.MediaSubTypes",
+          "startPos": 25,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "what movies in theater are now displaying ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 12,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "open nintendo 3ds hulk game",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 14,
+          "endPos": 16
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 5,
+          "endPos": 12
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "play one of the movies in the theaters nowadays",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.MediaFormat",
+          "startPos": 30,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "what is the cheapest the crew video game ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 21,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i want to play world cup games",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 15,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "display a hd version of iron man 3",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Title",
+          "startPos": 24,
+          "endPos": 33
+        },
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "what are the top 1990s hindi movies ?",
+      "intent": "Entertainment.Search",
+      "entities": [
+        {
+          "entity": "Entertainment.Keyword",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "Entertainment.UserRating",
+          "startPos": 13,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "delete any adult movie",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "let me remove all sex videos",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 18,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i want to erase all adult videos",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 20,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "remove for me any sex movie",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Entertainment.ContentRating",
+          "startPos": 18,
+          "endPos": 20
+        }
+      ]
+    }
+  ]
+}

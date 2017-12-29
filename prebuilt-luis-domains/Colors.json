@@ -1,0 +1,287 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Colors",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Clothes"
+    },
+    {
+      "name": "NonClothing"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Color"
+    },
+    {
+      "name": "Object"
+    },
+    {
+      "name": "Size"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "number"
+  ],
+  "model_features": [
+    {
+      "name": "Color",
+      "mode": false,
+      "words": "white,orange,purple,black,red,blue,yellow,silver,pink,brown,green,grey,gray,burgundy,gold,beige,navy,violet,teal,maroon,khaki,tan,light blue,lavender,ivory,olive,taupe,lime,fuchsia,royal blue,lilac,chocolate,plum,navy blue,peach,grape,lemon,hot pink,tangerine,strawberry,mint,cherry,banana",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "what time do you close?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is your phone number?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where is mike?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i would like a new coffee mug in teal",
+      "intent": "NonClothing",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 33,
+          "endPos": 36
+        },
+        {
+          "entity": "Object",
+          "startPos": 19,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "2 black xxl",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 6
+        },
+        {
+          "entity": "Size",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "white crop top",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "xs lawn socks",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 6
+        },
+        {
+          "entity": "Object",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "Size",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "5 grey mugs",
+      "intent": "NonClothing",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 5
+        },
+        {
+          "entity": "Object",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "a big yellow frame",
+      "intent": "NonClothing",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 6,
+          "endPos": 11
+        },
+        {
+          "entity": "Object",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "1 white shirt and 1 blue shirt",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 6
+        },
+        {
+          "entity": "Color",
+          "startPos": 20,
+          "endPos": 23
+        },
+        {
+          "entity": "Object",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "Object",
+          "startPos": 25,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "1 ivory slip",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 6
+        },
+        {
+          "entity": "Object",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "tan shorts in xxl",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 2
+        },
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 9
+        },
+        {
+          "entity": "Size",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "okra jeans xs",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 9
+        },
+        {
+          "entity": "Size",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "3 orange tank tops in medium",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 7
+        },
+        {
+          "entity": "Object",
+          "startPos": 9,
+          "endPos": 17
+        },
+        {
+          "entity": "Size",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "a big navy t-shirt",
+      "intent": "Clothes",
+      "entities": [
+        {
+          "entity": "Color",
+          "startPos": 6,
+          "endPos": 9
+        },
+        {
+          "entity": "Object",
+          "startPos": 11,
+          "endPos": 17
+        },
+        {
+          "entity": "Size",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}

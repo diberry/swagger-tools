@@ -1,0 +1,694 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Events",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Events.Book",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "Book"
+      }
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Events.Address",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "Address"
+      }
+    },
+    {
+      "name": "Events.Name",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "Name"
+      }
+    },
+    {
+      "name": "Events.PlaceName",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "PlaceName"
+      }
+    },
+    {
+      "name": "Events.PlaceType",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "PlaceType"
+      }
+    },
+    {
+      "name": "Events.Type",
+      "inherits": {
+        "domain_name": "Events",
+        "model_name": "Type"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "buy 2 tickets for the louvre museum",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 22,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "get game tickets",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "tickets for wicked please",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "usc vs notre dame tickets please",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 0,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "buy concert tickets for bill cosby",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 24,
+          "endPos": 33
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 4,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "book 5 tickets city game",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "find 2 tickets to the steven tyler show in seattle",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 43,
+          "endPos": 49
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 35,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "tickets for nine inch nails in copenhagen",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 31,
+          "endPos": 40
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 12,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "find tickets for toto in huber heights ohio",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 25,
+          "endPos": 42
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i want to see a concert in kitchener",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 27,
+          "endPos": 35
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 16,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "can you find me tickets to the seahawks game",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 31,
+          "endPos": 38
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 40,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "tickets for toronto raptors please",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 12,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i want to buy nick jonas tickets",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 14,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "find harvard crimson next game tickets",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 5,
+          "endPos": 19
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 26,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i want to watch a metallica concert",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 18,
+          "endPos": 26
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 28,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "purchase tickets for seahawks game saturday",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 21,
+          "endPos": 28
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 30,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "can you find tickets for lego land",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 25,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "find me tickets for deftones at pnc",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 32,
+          "endPos": 34
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "tickets to see hair at the hollywood bowl",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 27,
+          "endPos": 40
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "buy 4 tickets to the billy joel concert at safeco field",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 43,
+          "endPos": 54
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 21,
+          "endPos": 30
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 32,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i want to book tickets for american airlines arena",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 27,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "i want to book tickets for at&t center",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 27,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i want to book wembley stadium tickets",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 15,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "buy 2 tickets to the seattle storm game at key arena this monday",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 43,
+          "endPos": 51
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 21,
+          "endPos": 33
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 35,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i want to book a ticket to highest education center",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 27,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "help me in finding a romantic restaurant by the sea shore",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 30,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "can you find a cozier restaurant in my location ?",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 22,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "check for me the nearest romantic cafe",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 34,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "where can i buy football tickets",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i want to see a comedy theatre next weekend",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 14,
+          "endPos": 21
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "book for me tickets to lollapalooza in chicago",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 39,
+          "endPos": 45
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 23,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "book for me lana del rey tickets in west palm",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 36,
+          "endPos": 44
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 12,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i want to go to a cultural theatre tonight",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 18,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "where i can find a quiet cafe for studying ?",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 25,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i want a romantic restaurant for my newly married friends",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 18,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "buy me some tickets for that game",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 29,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "please order 4 tickets to the brian wilson concert at the paramount theatre",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 58,
+          "endPos": 74
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 43,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "show me concert tickets for the century link field stadium please",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.PlaceName",
+          "startPos": 32,
+          "endPos": 57
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 8,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to go to a concert in zurich this weekend",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 33,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to take dinner in a quiet restaurant in downtown",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 51,
+          "endPos": 58
+        },
+        {
+          "entity": "Events.Name",
+          "startPos": 31,
+          "endPos": 35
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 37,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to see a concert this weekend",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to go to a concert in new york city",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 33,
+          "endPos": 45
+        },
+        {
+          "entity": "Events.Type",
+          "startPos": 22,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to see a concert in toronto",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 31,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to go to a concert in toronto",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Address",
+          "startPos": 33,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "let ' s book two tickets for the international library",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Name",
+          "startPos": 33,
+          "endPos": 45
+        },
+        {
+          "entity": "Events.PlaceType",
+          "startPos": 47,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "i ' d like to see britney spears in concert",
+      "intent": "Events.Book",
+      "entities": [
+        {
+          "entity": "Events.Type",
+          "startPos": 36,
+          "endPos": 42
+        }
+      ]
+    }
+  ]
+}

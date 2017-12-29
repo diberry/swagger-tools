@@ -1,0 +1,932 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Taxi",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Taxi.Book",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "Book"
+      }
+    },
+    {
+      "name": "Taxi.Cancel",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "Cancel"
+      }
+    },
+    {
+      "name": "Taxi.Track",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "Track"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "name": "Taxi.Address",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "Address"
+      }
+    },
+    {
+      "name": "Taxi.DestinationAddress",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "DestinationAddress"
+      }
+    },
+    {
+      "name": "Taxi.DestinationPlaceName",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "DestinationPlaceName"
+      }
+    },
+    {
+      "name": "Taxi.DestinationPlaceType",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "DestinationPlaceType"
+      }
+    },
+    {
+      "name": "Taxi.PlaceName",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "PlaceName"
+      }
+    },
+    {
+      "name": "Taxi.PlaceType",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "PlaceType"
+      }
+    },
+    {
+      "name": "Taxi.TransportationCompany",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "TransportationCompany"
+      }
+    },
+    {
+      "name": "Taxi.TransportationType",
+      "inherits": {
+        "domain_name": "Taxi",
+        "model_name": "TransportationType"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "get me a taxi",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "cancel my uber reservation",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "get me an uberx",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "cancel uber reservation for 5pm",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "please cancel my uber reservation at 5",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "taxi to wall street please",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 8,
+          "endPos": 18
+        },
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how far away is my uber",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 19,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "book a tampa uber lox for me",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 13,
+          "endPos": 16
+        },
+        {
+          "entity": "Taxi.Address",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "find me a taxi in cheltenham",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 18,
+          "endPos": 27
+        },
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "call a cab to go to camels back park on weekend",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 7,
+          "endPos": 9
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 20,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "i need a taxi for 10am",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "find me the cheapest taxi near me",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 21,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "cancel the suv reservation",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "how long wait for taxi ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "when will my taxi arrive ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "how much going to take before the driver arrive ?",
+      "intent": "Taxi.Track",
+      "entities": []
+    },
+    {
+      "text": "please send an uber black goint to turnpike from mickas",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 49,
+          "endPos": 54
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 35,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "please send an uber black goint to volterra from bakemans",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 49,
+          "endPos": 56
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 35,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "i need an uber lux to take me to my home from work please",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceType",
+          "startPos": 46,
+          "endPos": 49
+        },
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 36,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "look for an uber black to mercer museum",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 26,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "book uber lux to lax",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 5,
+          "endPos": 12
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "you should cancel my uber reservation for outback steakhouse",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 21,
+          "endPos": 24
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 42,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "at 5 today have uber pick me up at work to go home",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 35,
+          "endPos": 38
+        },
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 46,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "cancel uber black reservation to work",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 7,
+          "endPos": 16
+        },
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 33,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "please tell me uber eta to my location .",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 27,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "book a taxi from brent cross to the royal free hospital",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 7,
+          "endPos": 10
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 17,
+          "endPos": 27
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 36,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "i want to get a taxi from mount baker to pioneer square",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 26,
+          "endPos": 36
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 41,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "can you take me to rainier beach from tacoma dome with uber lux please",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 38,
+          "endPos": 48
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 19,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "can you cancel my uber reservation ?",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "can you cancel the taxi for me",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 19,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i need to cancel my uber",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 20,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "cancel uber x reservation",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 7,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "look for an uber black to mighty - o donuts",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 12,
+          "endPos": 21
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 26,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "how far away is an uber",
+      "intent": "Taxi.Track",
+      "entities": []
+    },
+    {
+      "text": "i need a yellow cab to take me to duane reade holdings from christmas market",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 60,
+          "endPos": 75
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 34,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "please send an uber to hola from brandsmart",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 33,
+          "endPos": 42
+        },
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 15,
+          "endPos": 18
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i need uber lux to take me to norwegian cruise line from page boy motel",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 57,
+          "endPos": 70
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 30,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "please send uber to houghton ' s from dynatronics",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 38,
+          "endPos": 48
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 20,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "i need an uber lux to take me to sonrise rv from worker ' s stadium",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 49,
+          "endPos": 66
+        },
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 33,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "look for an uber to mighty - o donuts",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Taxi.PlaceName",
+          "startPos": 20,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "let ' s book an uber to move from tukwila international boulevard to work in seattle",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.PlaceType",
+          "startPos": 69,
+          "endPos": 72
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 34,
+          "endPos": 64
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 77,
+          "endPos": 83
+        }
+      ]
+    },
+    {
+      "text": "book a uber x to pick me up from the farmers market in olympia and take me to 795 e dragram tucson",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 78,
+          "endPos": 97
+        },
+        {
+          "entity": "Taxi.DestinationPlaceType",
+          "startPos": 37,
+          "endPos": 50
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 55,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "book an uber for me to university street from othello",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 23,
+          "endPos": 39
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 46,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "can you find an uber black to take to aurora from ballard",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 38,
+          "endPos": 43
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 50,
+          "endPos": 56
+        }
+      ]
+    },
+    {
+      "text": "book reservation through uber x to 45th street .",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 35,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "book an uber x to pick me up from the farmers market in olympia and take me to 795 e dragram tucson",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 8,
+          "endPos": 13
+        },
+        {
+          "entity": "Taxi.Address",
+          "startPos": 79,
+          "endPos": 98
+        },
+        {
+          "entity": "Taxi.DestinationPlaceType",
+          "startPos": 38,
+          "endPos": 51
+        },
+        {
+          "entity": "Taxi.DestinationAddress",
+          "startPos": 56,
+          "endPos": 62
+        }
+      ]
+    },
+    {
+      "text": "take me to douglas p . benoit from schticky gift corporation with uber lux",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 35,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "i want to visit the space needle seattle book me a taxi from my location",
+      "intent": "Taxi.Book",
+      "entities": [
+        {
+          "entity": "Taxi.DestinationPlaceName",
+          "startPos": 20,
+          "endPos": 39
+        },
+        {
+          "entity": "Taxi.DestinationPlaceType",
+          "startPos": 61,
+          "endPos": 71
+        },
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 51,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "how long should i wait for the taxi ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 31,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "where is my taxi right now ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "where is my uber x ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 12,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "where is my taxi location ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i want to find out the location of my taxi .",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 38,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "please track taxi",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 13,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "how long till pick up",
+      "intent": "Taxi.Track",
+      "entities": []
+    },
+    {
+      "text": "find my taxi .",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "how late is the uber black going to be ?",
+      "intent": "Taxi.Track",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 16,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "book the ride that is the cheapest .",
+      "intent": "Taxi.Book",
+      "entities": []
+    },
+    {
+      "text": "cancel uber x i reserved",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 7,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "cancel my uber x reservation",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i need to cancel the myrtle beach trip for uber x",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.Address",
+          "startPos": 21,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "cancel yellow cab reservation",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationType",
+          "startPos": 7,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "cancel my uber suv reservation for 3 : 00pm",
+      "intent": "Taxi.Cancel",
+      "entities": [
+        {
+          "entity": "Taxi.TransportationCompany",
+          "startPos": 10,
+          "endPos": 17
+        }
+      ]
+    }
+  ]
+}

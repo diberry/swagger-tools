@@ -1,0 +1,401 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Reminder",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Reminder.Change",
+      "inherits": {
+        "domain_name": "Reminder",
+        "model_name": "Change"
+      }
+    },
+    {
+      "name": "Reminder.Create",
+      "inherits": {
+        "domain_name": "Reminder",
+        "model_name": "Create"
+      }
+    },
+    {
+      "name": "Reminder.Delete",
+      "inherits": {
+        "domain_name": "Reminder",
+        "model_name": "Delete"
+      }
+    },
+    {
+      "name": "Reminder.Find",
+      "inherits": {
+        "domain_name": "Reminder",
+        "model_name": "Find"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "name": "Reminder.Text",
+      "inherits": {
+        "domain_name": "Reminder",
+        "model_name": "Text"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "create reminder",
+      "intent": "Reminder.Create",
+      "entities": []
+    },
+    {
+      "text": "update reminder for courthouse",
+      "intent": "Reminder.Change",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "show me the reminders",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "can you change my reminder",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "change reminder time",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "change reminder",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "cancel reminder for iced tea",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "delete meeting reminders",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 7,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "display dog groomer reminder",
+      "intent": "Reminder.Find",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 8,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "open work reminder",
+      "intent": "Reminder.Find",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "remember to run errands",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 12,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "undo fold laundry reminder",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 5,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "extend reminder",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "reset reminder",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "modify my reminder",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "postpone my eight thirty reminder to nine thirty",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "remember fragrances",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 9,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "remember poltergeist",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 9,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "remember tomorrow",
+      "intent": "Reminder.Create",
+      "entities": []
+    },
+    {
+      "text": "delete reminder twenty eight",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 16,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "delete surprise party reminder",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 7,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "remove my reminder for the grocery shopping this friday",
+      "intent": "Reminder.Delete",
+      "entities": []
+    },
+    {
+      "text": "delete reminder for class",
+      "intent": "Reminder.Delete",
+      "entities": []
+    },
+    {
+      "text": "reminder to call henry",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 12,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "remind me to listen to imagine dragons",
+      "intent": "Reminder.Create",
+      "entities": []
+    },
+    {
+      "text": "put to sleep reminder to cut grass on thursday",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "locate meeting with maria this week for me",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "open other reminders",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "search for the massage reminder",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "can you find the reminder that jack turns twenty",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "what reminders do i have tomorrow ?",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "11 : 15 am tomorrow reminder",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "set a reminder for may twenty fifth",
+      "intent": "Reminder.Create",
+      "entities": []
+    },
+    {
+      "text": "how do i erase reminders ?",
+      "intent": "Reminder.Delete",
+      "entities": []
+    },
+    {
+      "text": "snooze appointment",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 7,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "4 : 30 tue doc reminder",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "get white shirts while in the mall later afternoon",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 0,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "remind me about tuesday ' s bake sale at 9 instead of 11",
+      "intent": "Reminder.Change",
+      "entities": []
+    },
+    {
+      "text": "find today ' s reminders",
+      "intent": "Reminder.Find",
+      "entities": []
+    },
+    {
+      "text": "a reminder to recall calling carlos",
+      "intent": "Reminder.Create",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 14,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "add reminder for marry ' s party friday evening at 8",
+      "intent": "Reminder.Create",
+      "entities": []
+    },
+    {
+      "text": "don ' t remind me anymore to give johnny his antibiotic",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 29,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "delete doctor ' s appointment on tuesday",
+      "intent": "Reminder.Delete",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 7,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "please snooze suntan reminder",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 14,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i am at liquor store - beer",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Reminder.Text",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    }
+  ]
+}

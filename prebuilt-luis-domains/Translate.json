@@ -1,0 +1,202 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "Translate",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Translate.Translate",
+      "inherits": {
+        "domain_name": "Translate",
+        "model_name": "Translate"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "name": "Translate.TargetLanguage",
+      "inherits": {
+        "domain_name": "Translate",
+        "model_name": "TargetLanguage"
+      }
+    },
+    {
+      "name": "Translate.Text",
+      "inherits": {
+        "domain_name": "Translate",
+        "model_name": "Text"
+      }
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "how do you say how are you in french ?",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 15,
+          "endPos": 25
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 30,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "display i am happy in french",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 8,
+          "endPos": 17
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "let me know what does the word expensive mean in german",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 31,
+          "endPos": 39
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 49,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "please show me translation of joy in dutch",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 30,
+          "endPos": 32
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 37,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "translate for me schedule a meeting in french",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 17,
+          "endPos": 34
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 39,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "can you translate what is your name in japanese ?",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 18,
+          "endPos": 34
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 39,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "i need your help displaying i am fine thanks in arabic",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 28,
+          "endPos": 43
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 48,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "provide me a spanish translation for how old are you",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 37,
+          "endPos": 51
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "\" please translate for me hello world \" \" in danish \" \" \"",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 26,
+          "endPos": 40
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 45,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "\" translate a meeting invitation \" \" to german \" \" \"",
+      "intent": "Translate.Translate",
+      "entities": [
+        {
+          "entity": "Translate.Text",
+          "startPos": 12,
+          "endPos": 38
+        },
+        {
+          "entity": "Translate.TargetLanguage",
+          "startPos": 40,
+          "endPos": 45
+        }
+      ]
+    }
+  ]
+}
