@@ -1,0 +1,23 @@
+{
+  "name": "swagger-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-geberr/swagger-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-geberr/swagger-tools/issues"
+  },
+  "homepage": "https://github.com/v-geberr/swagger-tools#readme",
+  "dependencies": {
+    "fs-promise": "^2.0.3",
+    "underscore": "^1.8.3"
+  }
+}
