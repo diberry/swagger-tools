@@ -1,0 +1,6 @@
+/apps/{appId}/versions/{versionId}/assignedkey 
+/apps/{appId}/versions/{versionId}/externalKeys 
+/apps/{appId}/versions/{versionId}/externalKeys/{keyType}  
+/programmatickey  
+/subscriptions  
+/subscriptions/{subscriptionKey}  
