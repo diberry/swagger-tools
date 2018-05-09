@@ -1,6 +1,6 @@
 const fs = require("fs-promise");
 const _ = require("underscore");
-const swagger = require('./swagger.json');
+const swagger = require('./0504-luis-for-build-conf.json');
 
 let basePath = swagger.basePath;
 
