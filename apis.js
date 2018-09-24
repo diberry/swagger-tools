@@ -1,5 +1,5 @@
 const fs = require("fs-promise");
-const swagger = require('./swagger.json');
+const swagger = require('./0924-ignite.json');
 
 let basePath = swagger.basePath;
 
